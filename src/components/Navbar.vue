@@ -10,7 +10,7 @@
         <button class="nav__close-menu" @click="changeNavClassClose()" id="close_menu">
           <img :src='require("@/assets/img/icons/right-arrow.svg")' alt="">
         </button>
-        <router-link to="/">
+        <router-link to="/main">
           <a class="nav__link nav__link_title">RASS</a>
         </router-link>
         <router-link to="/customerlist">
@@ -23,8 +23,17 @@
             <div class="modal__block">
               <h2 class="modal__title">Идентификация</h2>
               <div class="modal__content">Приложите вашу карту к устройству</div>
+              <div class="modal__content">или введите ID карты:</div>
+              <form action="#" >
+                <input
+                    type="text"
+                    class="modal__input_mp"
+                    placeholder="ID">
+                <hr class="modal__jr" />
+              </form>
               <div class="modal__footer">
                 <button @click="closeModal">ОК</button>
+                <button @click="closeModal">Найти клиента по ID</button>
               </div>
             </div>
           </div>

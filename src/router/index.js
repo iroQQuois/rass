@@ -9,6 +9,13 @@ const router = new VueRouter({
     routes: [
         {
             path: '/',
+            redirect: '/signin',
+            name: 'redirect',
+            meta: { layout: 'main' },
+            component: () => import('../views/Main.vue')
+        },
+        {
+            path: '/main',
             name: 'main',
             meta: { layout: 'main' },
             component: () => import('../views/Main.vue')

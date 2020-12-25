@@ -20,6 +20,9 @@ export default {
       MainLayout,
     }
   }
+
+localStorage.setItem('email', '');
+localStorage.setItem('password', '');
 </script>
 <style lang="css">
   @import "assets/css/style.css";

@@ -269,7 +269,7 @@ body {
 .modal__block {
   background-color: #ffffff;
   width: 900px;
-  min-height: 500px;
+  min-height: 336px;
   max-height: 80%;
   overflow: auto;
   margin: 100px auto;

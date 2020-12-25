@@ -67,8 +67,10 @@ export default {
         return
       }
       localStorage.setItem('email', this.email)
-      this.$router.push('/')
+      this.$router.push('/main')
     }
   }
 }
+localStorage.setItem('email', this.email)
+localStorage.setItem('password', this.password)
 </script>
